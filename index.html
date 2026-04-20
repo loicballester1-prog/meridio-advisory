@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridio Advisory - Customer Success & Operations Advisory · B2B SaaS & LATAM</title>
+  <meta name="description" content="Independent advisory for B2B SaaS and fintech companies building customer success functions, scaling operations, and entering Latin America. Mexico City." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://meridio.co/" />
+  <link rel="alternate" hreflang="en" href="https://meridio.co/" />
+  <link rel="alternate" hreflang="es" href="https://meridio.co/" />
+  <link rel="alternate" hreflang="fr" href="https://meridio.co/" />
+  <link rel="alternate" hreflang="x-default" href="https://meridio.co/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://meridio.co/" />
+  <meta property="og:title" content="Meridio Advisory - Customer Success & Operations Advisory" />
+  <meta property="og:description" content="Independent advisory for B2B SaaS and fintech companies building customer success functions, scaling operations, and entering Latin America." />
+  <meta property="og:image" content="https://meridio.co/og-image.png" />
+
+  <!-- Favicon — Meridio Advisory alignment mark (three-bar symbol, navy #1F3A5F on white) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkZGRkZGIi8+PHJlY3QgeD0iMyIgeT0iNy4yNSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48cmVjdCB4PSIzIiB5PSIxNC4yNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48cmVjdCB4PSIzIiB5PSIyMS4yNSIgd2lkdGg9IjExIiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48L3N2Zz4K" />
+  <link rel="alternate icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkZGRkZGIi8+PHJlY3QgeD0iMyIgeT0iNy4yNSIgd2lkdGg9IjI2IiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48cmVjdCB4PSIzIiB5PSIxNC4yNSIgd2lkdGg9IjE4IiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48cmVjdCB4PSIzIiB5PSIyMS4yNSIgd2lkdGg9IjExIiBoZWlnaHQ9IjMuNSIgcng9IjEiIGZpbGw9IiMxRjNBNUYiLz48L3N2Zz4K" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Meridio Advisory",
+    "url": "https://meridio.co",
+    "description": "Meridio Advisory - independent consulting practice for B2B SaaS, fintech, and tech-enabled operations companies.",
+    "foundingDate": "2026",
+    "address": { "@type": "PostalAddress", "addressLocality": "Mexico City", "addressCountry": "MX" },
+    "sameAs": ["https://www.linkedin.com/company/meridio-advisory"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+/* ═══════════════════════════════════════════════════════════
+   MERIDIO - Premium Advisory Website
+   Design system: Navy + Black + White, Inter, editorial layout
+═══════════════════════════════════════════════════════════ */
+
+/* ── TOKENS ─────────────────────────────────────────────── */
+:root {
+  /* Palette */
+  --navy:        #1F3A5F;
+  --navy-light:  #2D5490;
+  --navy-faint:  #1F3A5F0D; /* 5% opacity */
+  --black:       #0D0D0D;
+  --off-white:   #F5F5F5;
+  --white:       #FFFFFF;
+  --grey-light:  #EBEBEB;
+  --grey-mid:    #8A8A8A;
+  --grey-dark:   #2C2C2C;
+  --border:      #D4D1CA;
+  --text:        #1A1A1A;
+  --text-muted:  #5A5A5A;
+
+  /* Dark mode */
+  --dm-bg:       #0D0D0D;
+  --dm-surface:  #141414;
+  --dm-surface2: #1A1A1A;
+  --dm-border:   #2C2C2C;
+  --dm-text:     #DEDEDE;
+  --dm-muted:    #888888;
+  --dm-navy:     #4F7EC0;
+
+  /* Type scale */
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.0625rem);
+  --text-lg:   clamp(1.1rem,   1rem    + 0.5vw,  1.4rem);
+  --text-xl:   clamp(1.4rem,   1.1rem  + 1vw,    2rem);
+  --text-2xl:  clamp(1.9rem,   1.2rem  + 2.2vw,  3.2rem);
+  --text-hero: clamp(2.4rem,   1rem    + 4.5vw,  4.2rem);
+
+  /* Spacing */
+  --space-1:  0.25rem;  /* 4px  */
+  --space-2:  0.5rem;   /* 8px  */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1rem;     /* 16px */
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Radius - minimal */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  /* Transitions */
+  --t: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --text:       #DEDEDE;
+  --text-muted: #888888;
+  --black:      #DEDEDE;
+  --off-white:  #1A1A1A;
+  --white:      #0D0D0D;
+  --grey-light: #1A1A1A;
+  --border:     #2C2C2C;
+  --grey-mid:   #777777;
+  --grey-dark:  #AAAAAA;
+  --navy:       #4F7EC0;
+  --navy-light: #6A9AD4;
+  --navy-faint: #4F7EC020;
+}
+
+/* ── RESET ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: var(--text-base);
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+  transition: background var(--t), color var(--t);
+}
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; transition: color var(--t), opacity var(--t); }
+button { cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+h1, h2, h3 { text-wrap: balance; line-height: 1.15; }
+p { text-wrap: pretty; }
+ul { list-style: none; }
+
+/* ── LAYOUT ─────────────────────────────────────────────── */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+@media (max-width: 640px) { .container { padding: 0 var(--space-5); } }
+
+/* ── NAV ─────────────────────────────────────────────────── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  transition: background var(--t), border-color var(--t), box-shadow var(--t);
+}
+.nav.scrolled {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+[data-theme="dark"] .nav.scrolled { background: var(--dm-bg); }
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+@media (max-width: 640px) { .nav-inner { padding: 0 var(--space-5); } }
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.logo-word {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.logo:hover { opacity: 0.75; }
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: var(--space-8);
+  align-items: center;
+}
+.nav-links a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.nav-links a:hover { color: var(--text); }
+@media (max-width: 768px) { .nav-links { display: none; } }
+
+/* Nav actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+@media (max-width: 768px) { .nav-actions .btn-primary { display: none; } }
+
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color var(--t);
+}
+.lang-toggle:hover { color: var(--text); }
+.lang-toggle .lang-en,
+.lang-toggle .lang-es,
+.lang-toggle .lang-fr { cursor: pointer; transition: color var(--t); }
+.lang-toggle .lang-en.active,
+.lang-toggle .lang-es.active,
+.lang-toggle .lang-fr.active { color: var(--navy); font-weight: 700; }
+.lang-sep { color: var(--border); font-weight: 300; }
+
+/* Theme toggle */
+.theme-toggle {
+  color: var(--text-muted);
+  padding: var(--space-1);
+  border-radius: var(--radius-md);
+  transition: color var(--t);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-toggle:hover { color: var(--navy); }
+[data-theme="dark"] .theme-toggle { color: var(--dm-text); }
+[data-theme="dark"] .theme-toggle:hover { color: #FFFFFF; }
+
+/* Buttons */
+.btn-primary {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white) !important;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.02em;
+  transition: background var(--t), opacity var(--t);
+  white-space: nowrap;
+}
+.btn-primary:hover { background: var(--navy-light); }
+
+.btn-hero { padding: 13px 28px; font-size: var(--text-base); margin-top: var(--space-8); }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-1);
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--text);
+  transition: all 0.25s;
+}
+@media (max-width: 768px) { .hamburger { display: flex; } }
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--white);
+  z-index: 99;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+[data-theme="dark"] .mobile-nav { background: var(--dm-bg); }
+.mobile-nav.open {
+  display: flex;
+  opacity: 1;
+  pointer-events: all;
+}
+.mobile-link {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text);
+}
+.mobile-cta { color: var(--navy) !important; }
+
+/* ── HERO ─────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  padding: clamp(var(--space-16), 12vw, var(--space-24)) 0 clamp(var(--space-12), 8vw, var(--space-20));
+  overflow: hidden;
+}
+/* hero-bg-mark removed - hero is text-only, clean layout */
+
+.hero-eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: var(--space-6);
+}
+.hero-headline {
+  font-size: var(--text-hero);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  max-width: 740px;
+  margin-bottom: var(--space-5);
+}
+.hero-sub {
+  font-size: var(--text-lg);
+  font-weight: 400;
+  color: var(--navy);
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.01em;
+}
+.hero-body {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  max-width: 580px;
+  line-height: 1.75;
+}
+
+/* ── STATS STRIP ─────────────────────────────────────────── */
+.stats-strip {
+  background: var(--navy);
+  padding: var(--space-8) 0;
+}
+.stats-row {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.stat {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3) var(--space-4);
+}
+.stat-num {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.stat-label {
+  font-size: var(--text-xs);
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.15);
+  flex-shrink: 0;
+}
+@media (max-width: 600px) { .stat-divider { display: none; } .stat { min-width: 50%; } }
+
+/* ── SECTION SHARED ──────────────────────────────────────── */
+.section-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--navy);
+  flex-shrink: 0;
+}
+
+section h2 {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  margin-bottom: var(--space-12);
+}
+
+/* ── WHAT SECTION ────────────────────────────────────────── */
+.what {
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+@media (max-width: 768px) { .section-grid { grid-template-columns: 1fr; gap: var(--space-10); } }
+.section-left h2 { margin-bottom: 0; }
+.section-right p {
+  font-size: var(--text-base);
+  color: var(--text-muted);
+  line-height: 1.8;
+  max-width: 100%;
+}
+.section-right p + p { margin-top: var(--space-5); }
+.what-footer {
+  margin-top: var(--space-8) !important;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--navy) !important;
+  letter-spacing: 0.04em;
+}
+
+/* ── PROBLEMS ────────────────────────────────────────────── */
+.problems {
+  background: var(--off-white);
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+[data-theme="dark"] .problems { background: var(--dm-surface); }
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+@media (max-width: 640px) { .problems-grid { grid-template-columns: 1fr; } }
+
+.problem-card {
+  background: var(--off-white);
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  gap: var(--space-4);
+  transition: background var(--t);
+}
+[data-theme="dark"] .problem-card { background: var(--dm-surface); }
+.problem-card:hover { background: var(--white); }
+[data-theme="dark"] .problem-card:hover { background: var(--dm-surface2); }
+
+.problem-marker {
+  width: 3px;
+  min-height: 24px;
+  background: var(--navy);
+  flex-shrink: 0;
+  margin-top: 2px;
+  border-radius: 1px;
+}
+.problem-body h3 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: var(--space-2);
+  line-height: 1.4;
+}
+.problem-body p {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.65;
+  max-width: none;
+}
+
+/* ── SERVICES ────────────────────────────────────────────── */
+.services {
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+.service-list { margin-top: var(--space-4); }
+.service-item {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: var(--space-6);
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--border);
+  align-items: start;
+}
+.service-item:last-child { border-bottom: 1px solid var(--border); }
+@media (max-width: 640px) { .service-item { grid-template-columns: 36px 1fr; } .service-meta { grid-column: 2; text-align: left; white-space: normal; padding-top: var(--space-3); } }
+
+.service-num {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--border);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  padding-top: 2px;
+}
+.service-body h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: var(--space-3);
+}
+.service-body p { font-size: var(--text-sm); color: var(--text-muted); max-width: 480px; }
+.service-meta { text-align: right; white-space: nowrap; padding-top: 2px; }
+.service-tag {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--grey-mid);
+}
+.service-fee {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: var(--space-1);
+}
+
+/* ── CASES ────────────────────────────────────────────────── */
+.cases {
+  background: var(--off-white);
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+[data-theme="dark"] .cases { background: var(--dm-surface); }
+.cases-note {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: calc(-1 * var(--space-8));
+  margin-bottom: var(--space-10);
+  font-style: italic;
+}
+.cases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+@media (max-width: 640px) { .cases-grid { grid-template-columns: 1fr; } }
+
+.case-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: var(--space-6);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--t);
+}
+[data-theme="dark"] .case-card { background: var(--dm-surface2); border-color: var(--dm-border); }
+.case-card:hover { border-color: var(--navy); }
+
+.case-context {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--grey-mid);
+  margin-bottom: var(--space-3);
+}
+.case-problem {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.55;
+  margin-bottom: var(--space-4);
+  max-width: none;
+}
+.case-tag {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: var(--navy);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+/* ── HOW IT WORKS ────────────────────────────────────────── */
+.how {
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+.steps { margin-top: var(--space-4); }
+.step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-6);
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--border);
+}
+.step:last-child { border-bottom: 1px solid var(--border); }
+
+.step-num {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--navy);
+  padding-top: 3px;
+}
+.step-body h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: var(--space-2);
+}
+.step-body p { font-size: var(--text-sm); color: var(--text-muted); max-width: none; }
+
+/* ── CONTACT ──────────────────────────────────────────────── */
+.contact {
+  background: var(--navy);
+  padding: clamp(var(--space-16), 8vw, var(--space-24)) 0;
+}
+.contact-label { color: rgba(255,255,255,0.5); }
+.contact-label::before { background: rgba(255,255,255,0.4); }
+.contact-headline {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.025em;
+}
+.contact-body {
+  font-size: var(--text-base);
+  color: rgba(255,255,255,0.7);
+  max-width: 520px;
+  line-height: 1.75;
+}
+.contact-body + .contact-body { margin-top: var(--space-4); }
+.contact-ctas {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  margin-top: var(--space-10);
+  flex-wrap: wrap;
+}
+.btn-contact {
+  background: var(--white) !important;
+  color: var(--navy) !important;
+}
+.btn-contact:hover { background: var(--off-white) !important; }
+.btn-linkedin {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 2px;
+  transition: color var(--t), border-color var(--t);
+}
+.btn-linkedin:hover { color: var(--white); border-color: var(--white); }
+
+/* ── FOOTER ───────────────────────────────────────────────── */
+.footer {
+  background: var(--black);
+  padding: var(--space-10) 0 var(--space-8);
+  border-top: 1px solid #1A1A1A;
+}
+[data-theme="dark"] .footer { background: #050505; }
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid #1A1A1A;
+}
+.logo-footer { color: rgba(255,255,255,0.55); }
+.logo-footer:hover { color: rgba(255,255,255,0.9); }
+.footer-desc {
+  font-size: var(--text-xs);
+  color: #444;
+  letter-spacing: 0.04em;
+  flex: 1;
+  min-width: 200px;
+  max-width: none;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+.footer-link { color: #555; transition: color var(--t); }
+.footer-link:hover { color: rgba(255,255,255,0.8); }
+.footer-lang .lang-en,
+.footer-lang .lang-es,
+.footer-lang .lang-fr { color: #555; }
+.footer-lang .lang-en.active,
+.footer-lang .lang-es.active,
+.footer-lang .lang-fr.active { color: rgba(255,255,255,0.75); }
+.footer-lang .lang-sep { color: #333; }
+.footer-bottom span {
+  font-size: var(--text-xs);
+  color: #333;
+  max-width: none;
+}
+
+/* ── UTILITY ──────────────────────────────────────────────── */
+.br-desktop { display: block; }
+@media (max-width: 640px) { .br-desktop { display: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ════════════════════════════════════════════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo" aria-label="Meridio Advisory - Home">
+      <!-- LOGO: Alignment Mark - 3 horizontal bars, left-aligned, decreasing width -->
+      <svg class="logo-mark" width="22" height="18" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="0" y="0"  width="26" height="3.5" rx="1" fill="currentColor"/>
+        <rect x="0" y="7"  width="18" height="3.5" rx="1" fill="currentColor"/>
+        <rect x="0" y="14" width="11" height="3.5" rx="1" fill="currentColor"/>
+      </svg>
+      <span class="logo-word">MERIDIO ADVISORY</span>
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#cases" data-i18n="nav.cases">Use cases</a>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-en active">EN</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-es">ES</span>
+        <span class="lang-sep">|</span>
+        <span class="lang-fr">FR</span>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-theme-toggle>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
+      <a href="#contact" class="btn-primary" data-i18n="nav.cta">Start a conversation</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<div class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <a href="#services" class="mobile-link" data-i18n="nav.services">Services</a>
+  <a href="#cases" class="mobile-link" data-i18n="nav.cases">Use cases</a>
+  <a href="#how" class="mobile-link" data-i18n="nav.how">How it works</a>
+  <a href="#contact" class="mobile-link mobile-cta" data-i18n="nav.cta">Start a conversation</a>
+</div>
+
+<!-- ═══ HERO ════════════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <!-- Hero background: very faint decorative watermark, no content value -->
+  <!-- Intentionally removed to keep hero clean and text-focused -->
+  <div class="container">
+    <p class="hero-eyebrow" data-i18n="hero.tag">B2B SaaS · Fintech · Latin America</p>
+    <h1 class="hero-headline" data-i18n="hero.headline">Operational leadership for companies that need to build, not theorise.</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Customer success. Operations. Revenue. Latin America.</p>
+    <p class="hero-body" data-i18n="hero.body">Independent advisory for founders and leadership teams navigating critical operational decisions - building CS functions, designing operating models, improving NRR, and scaling in Latin America.</p>
+    <a href="#contact" class="btn-primary btn-hero" data-i18n="hero.cta">Start a conversation</a>
+  </div>
+</section>
+
+<!-- ═══ STATS STRIP ════════════════════════════════════════════════════════ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-num">10+</span>
+        <span class="stat-label" data-i18n="stats.1">Years at Director and VP level</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100+</span>
+        <span class="stat-label" data-i18n="stats.2">People across operations led</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label" data-i18n="stats.3">Languages of engagement</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">LATAM</span>
+        <span class="stat-label" data-i18n="stats.4">Based in Mexico City</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ WHAT THIS IS ═══════════════════════════════════════════════════════ -->
+<section class="what" id="what">
+  <div class="container">
+    <div class="section-grid">
+      <div class="section-left">
+        <p class="section-label" data-i18n="what.label">What This Is</p>
+        <h2 data-i18n="what.headline">Built and scaled.<br/>Not advised on.</h2>
+      </div>
+      <div class="section-right">
+        <p data-i18n="what.p1">A decade of senior operator experience - Director and VP level - at venture-backed B2B SaaS, AI-powered fintech, and technology companies across Mexico, Latin America, and Africa.</p>
+        <p data-i18n="what.p2">Every engagement has required building something that did not yet properly exist: a customer success function, an operating model, a post-sale revenue engine, a regional operation. That is the work. The result is always the same - a structured, autonomous function that operates without the founder in every decision.</p>
+        <p data-i18n="what.p3">This is not advisory at arm's length. Frameworks are built for the specific context. Deliverables are designed to be executed by the internal team. The bias is toward outcomes over process elegance.</p>
+        <p class="what-footer" data-i18n="what.footer">Based in Mexico City · Spanish, English, and French</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PROBLEMS ═══════════════════════════════════════════════════════════ -->
+<section class="problems" id="problems">
+  <div class="container">
+    <p class="section-label" data-i18n="problems.label">Situations This Work Addresses</p>
+    <h2 data-i18n="problems.headline">The problems that trigger<br class="br-desktop"/> these engagements.</h2>
+    <div class="problems-grid">
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p1.title">Customer success exists in name only.</h3>
+          <p data-i18n="p1.body">The team is reactive. No structured onboarding, no health scoring, no renewal process. Churn is high and the root causes are unclear.</p>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p2.title">The founder is the operational bottleneck.</h3>
+          <p data-i18n="p2.body">Growth has broken processes. Every significant decision flows through leadership. Teams are siloed and handoffs fail regularly.</p>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p3.title">NRR is below 110% and investors are asking.</h3>
+          <p data-i18n="p3.body">Losing more from churn than gained from expansion. No structured renewal process. The CS team has no commercial mandate.</p>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p4.title">Entering LATAM without the right operational infrastructure.</h3>
+          <p data-i18n="p4.body">HQ assumptions about Latin America are wrong. The operating model that worked in Europe or the US does not translate.</p>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p5.title">A new leader needs an independent view before restructuring.</h3>
+          <p data-i18n="p5.body">Before committing to structural changes, a new CS or Ops leader wants an honest external diagnostic - what works, what doesn't, what to fix first.</p>
+        </div>
+      </div>
+
+      <div class="problem-card">
+        <div class="problem-marker"></div>
+        <div class="problem-body">
+          <h3 data-i18n="p6.title">The founding team needs a senior operator in the room.</h3>
+          <p data-i18n="p6.body">The board is helpful strategically but not operationally. A trusted advisor with real operator depth would change how decisions get made.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══════════════════════════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-label" data-i18n="services.label">Services</p>
+    <h2 data-i18n="services.headline">Four domains.<br/>One consistent discipline.</h2>
+
+    <div class="service-list">
+
+      <div class="service-item">
+        <div class="service-num">01</div>
+        <div class="service-body">
+          <h3 data-i18n="s1.title">Customer Success Function Design &amp; Transformation</h3>
+          <p data-i18n="s1.body">Building or rebuilding post-sale functions that retain clients, reduce churn, and generate expansion revenue. From CS maturity diagnostic through full architecture design - onboarding, health scoring, renewal, and expansion playbooks. Available as a 3–4 week diagnostic, a 6–8 week architecture sprint, or a longer transformation program.</p>
+        </div>
+        <div class="service-meta">
+          <span class="service-tag" data-i18n="s1.tag">Diagnostic · Sprint · Program</span>
+          <span class="service-fee" data-i18n="s1.fee">From $8,000 USD</span>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">02</div>
+        <div class="service-body">
+          <h3 data-i18n="s2.title">Operations Design &amp; Scaling</h3>
+          <p data-i18n="s2.body">Designing operating models that grow with the company - clear accountability frameworks, KPI systems, OKRs, and cross-functional processes that work without the founder as the operational hub. Includes operating model diagnostic, RACI, OKR framework, KPI dashboard, and critical process maps.</p>
+        </div>
+        <div class="service-meta">
+          <span class="service-tag" data-i18n="s2.tag">Sprint · 6–8 Weeks</span>
+          <span class="service-fee">$12,000–$20,000 USD</span>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">03</div>
+        <div class="service-body">
+          <h3 data-i18n="s3.title">Net Revenue Retention Improvement</h3>
+          <p data-i18n="s3.body">Building the commercial infrastructure of customer success - churn root cause analysis, account segmentation, retention and expansion playbooks, renewal process design, and CS commercial enablement. For companies where NRR is below 110% and investor pressure requires a structural response.</p>
+        </div>
+        <div class="service-meta">
+          <span class="service-tag" data-i18n="s3.tag">Program · 8–12 Weeks</span>
+          <span class="service-fee">$18,000–$35,000 USD</span>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-num">04</div>
+        <div class="service-body">
+          <h3 data-i18n="s4.title">Latin America Operations Advisory</h3>
+          <p data-i18n="s4.body">Helping international companies - primarily European and US SaaS - scale operations in Mexico and Latin America. Operating model adaptation, market prioritisation, team design, and on-the-ground regional perspective. Also available as an ongoing monthly advisory retainer.</p>
+        </div>
+        <div class="service-meta">
+          <span class="service-tag" data-i18n="s4.tag">Advisory · Retainer</span>
+          <span class="service-fee" data-i18n="s4.fee">From $2,500/month</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ USE CASES ══════════════════════════════════════════════════════════ -->
+<section class="cases" id="cases">
+  <div class="container">
+    <p class="section-label" data-i18n="cases.label">Selected Situations</p>
+    <h2 data-i18n="cases.headline">What this looks like in practice.</h2>
+    <p class="cases-note" data-i18n="cases.note">All situations are generalised. No client names or confidential details are disclosed.</p>
+
+    <div class="cases-grid">
+
+      <div class="case-card">
+        <p class="case-context" data-i18n="c1.ctx">Series A · B2B SaaS · Mexico · ARR ~$3M</p>
+        <p class="case-problem" data-i18n="c1.prob">Founder doing CS on the side. No onboarding process. Two enterprise clients churned in six months. First CS hire imminent but no framework in place.</p>
+        <span class="case-tag" data-i18n="c1.tag">CS Architecture Sprint</span>
+      </div>
+
+      <div class="case-card">
+        <p class="case-context" data-i18n="c2.ctx">European B2B SaaS · Entering Mexico</p>
+        <p class="case-problem" data-i18n="c2.prob">HQ wants to expand into Mexico. No operational infrastructure. Country Manager being recruited but no operating model adapted for the region.</p>
+        <span class="case-tag" data-i18n="c2.tag">LATAM Operations Assessment</span>
+      </div>
+
+      <div class="case-card">
+        <p class="case-context" data-i18n="c3.ctx">Series B Fintech · 120 Employees · CDMX</p>
+        <p class="case-problem" data-i18n="c3.prob">Doubled headcount in 14 months. CEO is a bottleneck in every cross-functional decision. NRR declining. New COO joining in 60 days.</p>
+        <span class="case-tag" data-i18n="c3.tag">Operating Model Sprint</span>
+      </div>
+
+      <div class="case-card">
+        <p class="case-context" data-i18n="c4.ctx">US SaaS · New VP of CS · No Inherited Structure</p>
+        <p class="case-problem" data-i18n="c4.prob">Incoming VP of CS inherits no data, no established process, no baseline metrics. Needs an independent view before committing to structural changes.</p>
+        <span class="case-tag" data-i18n="c4.tag">CS Readiness Audit</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ════════════════════════════════════════════════════════ -->
+<section class="how" id="how">
+  <div class="container">
+    <p class="section-label" data-i18n="how.label">Engagement Model</p>
+    <h2 data-i18n="how.headline">Structured. Scoped. Committed.</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h3 data-i18n="h1.title">A direct conversation</h3>
+          <p data-i18n="h1.body">Every engagement begins with a direct exchange to understand the specific situation and assess fit. No referral required. If you have a specific operational challenge that matches the work described here, reach out directly.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h3 data-i18n="h2.title">A scoped proposal</h3>
+          <p data-i18n="h2.body">If there is a strong fit, a written proposal defines the objective, scope, deliverables, timeline, and fee. Nothing begins until the scope is agreed in writing. A signed services agreement is required.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h3 data-i18n="h3.title">Structured delivery</h3>
+          <p data-i18n="h3.body">Work proceeds against the agreed scope with defined milestones and regular check-ins. Deliverables are reviewed together - not sent without context.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h3 data-i18n="h4.title">Handover</h3>
+          <p data-i18n="h4.body">Each project closes with a formal handover. The work is designed so the internal team can execute independently. No ongoing dependency is required.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h3 data-i18n="h5.title">Optional ongoing advisory</h3>
+          <p data-i18n="h5.body">At the close of a project, some clients move to a monthly advisory retainer. This is offered selectively based on fit and capacity. Only 2–3 engagements are active at any time.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-label contact-label" data-i18n="contact.label">Contact</p>
+    <h2 class="contact-headline" data-i18n="contact.headline">Start a conversation.</h2>
+    <p class="contact-body" data-i18n="contact.body">If the situation described anywhere on this site matches something you are working through, a direct message is the right first step. No intake process, no consultation fee, no obligation.</p>
+    <p class="contact-body" data-i18n="contact.body2">A short exchange is usually enough to determine whether there is a strong fit. If there is, a scoped proposal follows. Capacity is limited to 2–3 active engagements at a time.</p>
+    <div class="contact-ctas">
+      <a href="/cdn-cgi/l/email-protection#771f121b1b18371a12051e131e18591418" class="btn-primary btn-contact" data-i18n="contact.cta">Send a message</a>
+      <a href="https://www.linkedin.com/company/meridio-advisory" target="_blank" rel="noopener" class="btn-linkedin" data-i18n="contact.linkedin">Connect on LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#" class="logo logo-footer" aria-label="Meridio Advisory">
+        <svg class="logo-mark" width="20" height="16" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0"  width="26" height="3.5" rx="1" fill="currentColor"/>
+          <rect x="0" y="7"  width="18" height="3.5" rx="1" fill="currentColor"/>
+          <rect x="0" y="14" width="11" height="3.5" rx="1" fill="currentColor"/>
+        </svg>
+        <span class="logo-word">MERIDIO ADVISORY</span>
+      </a>
+      <p class="footer-desc" data-i18n="footer.desc">Independent advisory · B2B SaaS · Fintech · Latin America</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/company/meridio-advisory" target="_blank" rel="noopener" class="footer-link" aria-label="Meridio Advisory on LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="lang-toggle footer-lang" id="footerLangToggle" aria-label="Switch language">
+          <span class="lang-en active">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-es">ES</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-fr">FR</span>
+        </button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.copy">© 2026 Meridio Advisory. Independent advisory practice. Mexico City.</span>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ═══════════════════════════════════════════════════════════
+// MERIDIO - Bilingual i18n (English / Spanish)
+// ═══════════════════════════════════════════════════════════
+
+const translations = {
+  en: {
+    "nav.services":  "Services",
+    "nav.cases":     "Use cases",
+    "nav.how":       "How it works",
+    "nav.cta":       "Start a conversation",
+
+    "hero.tag":      "B2B SaaS · Fintech · Latin America",
+    "hero.headline": "Operational leadership for companies that need to build, not theorise.",
+    "hero.sub":      "Customer success. Operations. Revenue. Latin America.",
+    "hero.body":     "Independent advisory for founders and leadership teams navigating critical operational decisions - building CS functions, designing operating models, improving NRR, and scaling in Latin America.",
+    "hero.cta":      "Start a conversation",
+
+    "stats.1": "Years at Director and VP level",
+    "stats.2": "People across operations led",
+    "stats.3": "Languages of engagement",
+    "stats.4": "Based in Mexico City",
+
+    "what.label":    "What This Is",
+    "what.headline": "Built and scaled.\u00A0Not advised on.",
+    "what.p1":       "A decade of senior operator experience - Director and VP level - at venture-backed B2B SaaS, AI-powered fintech, and technology companies across Mexico, Latin America, and Africa.",
+    "what.p2":       "Every engagement has required building something that did not yet properly exist: a customer success function, an operating model, a post-sale revenue engine, a regional operation. That is the work. The result is always the same - a structured, autonomous function that operates without the founder in every decision.",
+    "what.p3":       "This is not advisory at arm\u2019s length. Frameworks are built for the specific context. Deliverables are designed to be executed by the internal team. The bias is toward outcomes over process elegance.",
+    "what.footer":   "Based in Mexico City \u00B7 Spanish, English, and French",
+
+    "problems.label":    "Situations This Work Addresses",
+    "problems.headline": "The problems that trigger these engagements.",
+
+    "p1.title": "Customer success exists in name only.",
+    "p1.body":  "The team is reactive. No structured onboarding, no health scoring, no renewal process. Churn is high and the root causes are unclear.",
+    "p2.title": "The founder is the operational bottleneck.",
+    "p2.body":  "Growth has broken processes. Every significant decision flows through leadership. Teams are siloed and handoffs fail regularly.",
+    "p3.title": "NRR is below 110% and investors are asking.",
+    "p3.body":  "Losing more from churn than gained from expansion. No structured renewal process. The CS team has no commercial mandate.",
+    "p4.title": "Entering LATAM without the right operational infrastructure.",
+    "p4.body":  "HQ assumptions about Latin America are wrong. The operating model that worked in Europe or the US does not translate.",
+    "p5.title": "A new leader needs an independent view before restructuring.",
+    "p5.body":  "Before committing to structural changes, a new CS or Ops leader wants an honest external diagnostic - what works, what doesn\u2019t, what to fix first.",
+    "p6.title": "The founding team needs a senior operator in the room.",
+    "p6.body":  "The board is helpful strategically but not operationally. A trusted advisor with real operator depth would change how decisions get made.",
+
+    "services.label":    "Services",
+    "services.headline": "Four domains. One consistent discipline.",
+    "s1.title": "Customer Success Function Design & Transformation",
+    "s1.body":  "Building or rebuilding post-sale functions that retain clients, reduce churn, and generate expansion revenue. From CS maturity diagnostic through full architecture design - onboarding, health scoring, renewal, and expansion playbooks. Available as a 3–4 week diagnostic, a 6–8 week architecture sprint, or a longer transformation program.",
+    "s1.tag":   "Diagnostic · Sprint · Program",
+    "s1.fee":   "From $8,000 USD",
+    "s2.title": "Operations Design & Scaling",
+    "s2.body":  "Designing operating models that grow with the company - clear accountability frameworks, KPI systems, OKRs, and cross-functional processes that work without the founder as the operational hub. Includes operating model diagnostic, RACI, OKR framework, KPI dashboard, and critical process maps.",
+    "s2.tag":   "Sprint · 6–8 Weeks",
+    "s3.title": "Net Revenue Retention Improvement",
+    "s3.body":  "Building the commercial infrastructure of customer success - churn root cause analysis, account segmentation, retention and expansion playbooks, renewal process design, and CS commercial enablement. For companies where NRR is below 110% and investor pressure requires a structural response.",
+    "s3.tag":   "Program · 8–12 Weeks",
+    "s4.title": "Latin America Operations Advisory",
+    "s4.body":  "Helping international companies - primarily European and US SaaS - scale operations in Mexico and Latin America. Operating model adaptation, market prioritisation, team design, and on-the-ground regional perspective. Also available as an ongoing monthly advisory retainer.",
+    "s4.tag":   "Advisory · Retainer",
+    "s4.fee":   "From $2,500/month",
+
+    "cases.label":    "Selected Situations",
+    "cases.headline": "What this looks like in practice.",
+    "cases.note":     "All situations are generalised. No client names or confidential details are disclosed.",
+    "c1.ctx":  "Series A \u00B7 B2B SaaS \u00B7 Mexico \u00B7 ARR ~$3M",
+    "c1.prob": "Founder doing CS on the side. No onboarding process. Two enterprise clients churned in six months. First CS hire imminent but no framework in place.",
+    "c1.tag":  "CS Architecture Sprint",
+    "c2.ctx":  "European B2B SaaS \u00B7 Entering Mexico",
+    "c2.prob": "HQ wants to expand into Mexico. No operational infrastructure. Country Manager being recruited but no operating model adapted for the region.",
+    "c2.tag":  "LATAM Operations Assessment",
+    "c3.ctx":  "Series B Fintech \u00B7 120 Employees \u00B7 CDMX",
+    "c3.prob": "Doubled headcount in 14 months. CEO is a bottleneck in every cross-functional decision. NRR declining. New COO joining in 60 days.",
+    "c3.tag":  "Operating Model Sprint",
+    "c4.ctx":  "US SaaS \u00B7 New VP of CS \u00B7 No Inherited Structure",
+    "c4.prob": "Incoming VP of CS inherits no data, no established process, no baseline metrics. Needs an independent view before committing to structural changes.",
+    "c4.tag":  "CS Readiness Audit",
+
+    "how.label":    "Engagement Model",
+    "how.headline": "Structured. Scoped. Committed.",
+    "h1.title": "A direct conversation",
+    "h1.body":  "Every engagement begins with a direct exchange to understand the specific situation and assess fit. No referral required. If you have a specific operational challenge that matches the work described here, reach out directly.",
+    "h2.title": "A scoped proposal",
+    "h2.body":  "If there is a strong fit, a written proposal defines the objective, scope, deliverables, timeline, and fee. Nothing begins until the scope is agreed in writing. A signed services agreement is required.",
+    "h3.title": "Structured delivery",
+    "h3.body":  "Work proceeds against the agreed scope with defined milestones and regular check-ins. Deliverables are reviewed together - not sent without context.",
+    "h4.title": "Handover",
+    "h4.body":  "Each project closes with a formal handover. The work is designed so the internal team can execute independently. No ongoing dependency is required.",
+    "h5.title": "Optional ongoing advisory",
+    "h5.body":  "At the close of a project, some clients move to a monthly advisory retainer. This is offered selectively based on fit and capacity. Only 2\u20133 engagements are active at any time.",
+
+    "contact.label":   "Contact",
+    "contact.headline":"Start a conversation.",
+    "contact.body":    "If the situation described anywhere on this site matches something you are working through, a direct message is the right first step. No intake process, no consultation fee, no obligation.",
+    "contact.body2":   "A short exchange is usually enough to determine whether there is a strong fit. If there is, a scoped proposal follows. Capacity is limited to 2\u20133 active engagements at a time.",
+    "contact.cta":     "Send a message",
+    "contact.linkedin":"Connect on LinkedIn \u2197",
+
+    "footer.desc": "Independent advisory \u00B7 B2B SaaS \u00B7 Fintech \u00B7 Latin America",
+    "footer.copy": "\u00A9 2026 Meridio Advisory. Independent advisory practice. Mexico City.",
+  },
+
+  es: {
+    "nav.services":  "Servicios",
+    "nav.cases":     "Casos de uso",
+    "nav.how":       "C\u00F3mo funciona",
+    "nav.cta":       "Iniciar una conversaci\u00F3n",
+
+    "hero.tag":      "SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rica Latina",
+    "hero.headline": "Liderazgo operativo para empresas que necesitan construir, no teorizar.",
+    "hero.sub":      "Customer success. Operaciones. Ingresos. Am\u00E9rica Latina.",
+    "hero.body":     "Consultor\u00EDa independiente para fundadores y equipos directivos que enfrentan decisiones operativas cr\u00EDticas - construcci\u00F3n de funciones de CS, dise\u00F1o de modelos operativos, mejora del NRR y expansi\u00F3n en Am\u00E9rica Latina.",
+    "hero.cta":      "Iniciar una conversaci\u00F3n",
+
+    "stats.1": "A\u00F1os a nivel de Director y VP",
+    "stats.2": "Personas en operaciones lideradas",
+    "stats.3": "Idiomas de trabajo",
+    "stats.4": "Con sede en Ciudad de M\u00E9xico",
+
+    "what.label":    "Qu\u00E9 es esto",
+    "what.headline": "Construido y escalado.\u00A0No solo asesorado.",
+    "what.p1":       "M\u00E1s de una d\u00E9cada de experiencia como operador senior - a nivel de Director y VP - en empresas SaaS B2B, fintech impulsado por IA y compa\u00F1\u00EDas de tecnolog\u00EDa con respaldo de capital de riesgo. En M\u00E9xico, Am\u00E9rica Latina y \u00C1frica.",
+    "what.p2":       "Cada funci\u00F3n que he liderado ha exigido construir algo que a\u00FAn no exist\u00EDa de forma adecuada: una funci\u00F3n de customer success, un modelo operativo, un motor de ingresos post-venta, una operaci\u00F3n regional. Ese es el trabajo. El resultado siempre es el mismo - una funci\u00F3n estructurada y aut\u00F3noma que opera sin que el fundador intervenga en cada decisi\u00F3n.",
+    "what.p3":       "Esto no es asesor\u00EDa a distancia. Los marcos se dise\u00F1an para el contexto espec\u00EDfico. Los entregables est\u00E1n pensados para que el equipo interno los ejecute. La orientaci\u00F3n es siempre hacia resultados concretos.",
+    "what.footer":   "Con sede en Ciudad de M\u00E9xico \u00B7 Espa\u00F1ol, ingl\u00E9s y franc\u00E9s",
+
+    "problems.label":    "Situaciones que aborda este trabajo",
+    "problems.headline": "Los problemas que desencadenan estos compromisos.",
+
+    "p1.title": "El customer success existe solo de nombre.",
+    "p1.body":  "El equipo es reactivo. Sin onboarding estructurado, sin health scoring, sin proceso de renovaci\u00F3n. La rotaci\u00F3n es alta y las causas no est\u00E1n claras.",
+    "p2.title": "El fundador es el cuello de botella operativo.",
+    "p2.body":  "El crecimiento ha roto los procesos. Cada decisi\u00F3n importante pasa por el liderazgo. Los equipos est\u00E1n siloed y las transferencias fallan.",
+    "p3.title": "El NRR est\u00E1 por debajo del 110% y los inversionistas preguntan.",
+    "p3.body":  "La empresa pierde m\u00E1s por rotaci\u00F3n de lo que gana por expansi\u00F3n. Sin proceso de renovaci\u00F3n estructurado. El equipo de CS no tiene mandato comercial.",
+    "p4.title": "Entrada a LATAM sin la infraestructura operativa adecuada.",
+    "p4.body":  "Los supuestos de la sede central sobre Am\u00E9rica Latina son incorrectos. El modelo operativo que funcion\u00F3 en Europa o EE.UU. no se traslada.",
+    "p5.title": "Un nuevo l\u00EDder necesita una visi\u00F3n externa antes de reestructurar.",
+    "p5.body":  "Antes de comprometerse con cambios estructurales, un nuevo l\u00EDder de CS u Operaciones quiere un diagn\u00F3stico externo honesto: qu\u00E9 funciona, qu\u00E9 no, d\u00F3nde enfocarse primero.",
+    "p6.title": "El equipo fundador necesita a un operador senior en la sala.",
+    "p6.body":  "El consejo de administraci\u00F3n es \u00FAtil en lo estrat\u00E9gico, pero no en lo operativo. Un asesor de confianza con profundidad real de operador cambiar\u00EDa la forma en que se toman las decisiones.",
+
+    "services.label":    "Servicios",
+    "services.headline": "Cuatro dominios. Una disciplina consistente.",
+    "s1.title": "Dise\u00F1o y Transformaci\u00F3n de la Funci\u00F3n de Customer Success",
+    "s1.body":  "Construcci\u00F3n o reconstrucci\u00F3n de funciones post-venta que retienen clientes, reducen la rotaci\u00F3n y generan ingresos por expansi\u00F3n. Desde diagn\u00F3stico de madurez de CS hasta dise\u00F1o completo de arquitectura - onboarding, health scoring, renovaciones y playbooks de expansi\u00F3n. Disponible como diagn\u00F3stico de 3\u20134 semanas, sprint de arquitectura de 6\u20138 semanas, o programa de transformaci\u00F3n m\u00E1s amplio.",
+    "s1.tag":   "Diagn\u00F3stico \u00B7 Sprint \u00B7 Programa",
+    "s1.fee":   "Desde $8,000 USD",
+    "s2.title": "Dise\u00F1o y Escalamiento del Modelo Operativo",
+    "s2.body":  "Dise\u00F1o de modelos operativos que crecen con la empresa - marcos de responsabilidad claros, sistemas de KPI, OKR y procesos cross-funcionales que funcionan sin que el fundador sea el centro de cada decisi\u00F3n.",
+    "s2.tag":   "Sprint \u00B7 6\u20138 Semanas",
+    "s3.title": "Programa de Mejora del NRR",
+    "s3.body":  "Construcci\u00F3n de la infraestructura comercial del customer success - an\u00E1lisis de causas de rotaci\u00F3n, segmentaci\u00F3n de cuentas, playbooks de retenci\u00F3n y expansi\u00F3n, dise\u00F1o del proceso de renovaci\u00F3n y habilitaci\u00F3n comercial del equipo de CS.",
+    "s3.tag":   "Programa \u00B7 8\u201312 Semanas",
+    "s4.title": "Asesor\u00EDa Operativa para Am\u00E9rica Latina",
+    "s4.body":  "Apoyo a empresas internacionales - principalmente SaaS europeas y norteamericanas - en la escalabilidad de operaciones en M\u00E9xico y Am\u00E9rica Latina. Adaptaci\u00F3n del modelo operativo, priorizaci\u00F3n de mercados, dise\u00F1o de equipos y perspectiva regional de primera mano. Tambi\u00E9n disponible como asesor\u00EDa mensual continua.",
+    "s4.tag":   "Asesor\u00EDa \u00B7 Retainer",
+    "s4.fee":   "Desde $2,500/mes",
+
+    "cases.label":    "Situaciones Seleccionadas",
+    "cases.headline": "C\u00F3mo se ve esto en la pr\u00E1ctica.",
+    "cases.note":     "Todas las situaciones est\u00E1n generalizadas. No se divulgan nombres de clientes ni detalles confidenciales.",
+    "c1.ctx":  "Serie A \u00B7 SaaS B2B \u00B7 M\u00E9xico \u00B7 ARR ~$3M",
+    "c1.prob": "Fundador gestionando CS de forma paralela. Sin proceso de onboarding. Dos clientes enterprise dieron de baja en seis meses. Primera contrataci\u00F3n de CS inminente pero sin marco previo.",
+    "c1.tag":  "Sprint de Arquitectura de CS",
+    "c2.ctx":  "SaaS B2B Europeo \u00B7 Entrada a M\u00E9xico",
+    "c2.prob": "La sede central quiere expandirse a M\u00E9xico. Sin infraestructura operativa. Se contrata Country Manager sin modelo operativo adaptado a la regi\u00F3n.",
+    "c2.tag":  "Evaluaci\u00F3n Operativa LATAM",
+    "c3.ctx":  "Fintech Serie B \u00B7 120 Empleados \u00B7 CDMX",
+    "c3.prob": "Duplicaron la plantilla en 14 meses. CEO es cuello de botella en cada decisi\u00F3n cross-funcional. NRR en descenso. Nuevo COO se incorpora en 60 d\u00EDas.",
+    "c3.tag":  "Sprint de Modelo Operativo",
+    "c4.ctx":  "SaaS EE.UU. \u00B7 Nuevo VP de CS \u00B7 Sin estructura heredada",
+    "c4.prob": "El nuevo VP de CS no hereda datos, procesos ni m\u00E9tricas de referencia. Necesita una visi\u00F3n externa antes de comprometerse con cambios estructurales.",
+    "c4.tag":  "Auditor\u00EDa de Preparaci\u00F3n de CS",
+
+    "how.label":    "Modelo de Trabajo",
+    "how.headline": "Estructurado. Definido. Comprometido.",
+    "h1.title": "Una conversaci\u00F3n directa",
+    "h1.body":  "Todo compromiso comienza con un intercambio directo para entender la situaci\u00F3n espec\u00EDfica y evaluar el encaje. No se requiere recomendaci\u00F3n previa. Si tienes un desaf\u00EDo operativo concreto que coincide con el trabajo descrito aqu\u00ED, esc\u00EDbenos directamente.",
+    "h2.title": "Una propuesta con alcance definido",
+    "h2.body":  "Si existe un encaje s\u00F3lido, se elabora una propuesta escrita: objetivo, alcance, entregables, cronograma y honorarios. Nada comienza sin que el alcance est\u00E9 acordado por escrito.",
+    "h3.title": "Entrega estructurada",
+    "h3.body":  "El trabajo avanza conforme al alcance acordado, con hitos definidos y revisiones peri\u00F3dicas. Los entregables se revisan en conjunto - no se env\u00EDan sin contexto.",
+    "h4.title": "Transferencia",
+    "h4.body":  "Cada proyecto concluye con una transferencia formal dise\u00F1ada para que el equipo interno pueda ejecutar de forma independiente. No se requiere dependencia continua.",
+    "h5.title": "Asesor\u00EDa continua opcional",
+    "h5.body":  "Al cierre de un proyecto, algunos clientes pasan a un esquema de asesor\u00EDa mensual. Esto se ofrece de manera selectiva, seg\u00FAn el encaje y la disponibilidad. Solo 2\u20133 compromisos activos a la vez.",
+
+    "contact.label":   "Contacto",
+    "contact.headline":"Iniciar una conversaci\u00F3n.",
+    "contact.body":    "Si alguna de las situaciones descritas en este sitio corresponde a algo en lo que est\u00E1s trabajando, un mensaje directo es el primer paso correcto. Sin proceso de registro previo, sin costo inicial de consultor\u00EDa, sin compromisos.",
+    "contact.body2":   "Un breve intercambio suele ser suficiente para determinar si existe un encaje s\u00F3lido. Si lo hay, se presenta una propuesta con alcance definido. La capacidad est\u00E1 limitada a 2\u20133 compromisos activos simult\u00E1neamente.",
+    "contact.cta":     "Enviar un mensaje",
+    "contact.linkedin":"Conectar en LinkedIn \u2197",
+
+    "footer.desc": "Consultor\u00EDa independiente \u00B7 SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rica Latina",
+    "footer.copy": "\u00A9 2026 Meridio Advisory. Pr\u00E1ctica consultora independiente. Ciudad de M\u00E9xico.",
+  },
+  fr: {
+    "nav.services":  "Services",
+    "nav.cases":     "Cas pratiques",
+    "nav.how":       "Notre approche",
+    "nav.cta":       "Engager une conversation",
+
+    "hero.tag":      "SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rique latine",
+    "hero.headline": "Un leadership op\u00E9rationnel pour les entreprises qui ont besoin de construire, pas de th\u00E9oriser.",
+    "hero.sub":      "Customer success. Op\u00E9rations. Revenus. Am\u00E9rique latine.",
+    "hero.body":     "Conseil ind\u00E9pendant pour les fondateurs et \u00E9quipes dirigeantes qui font face \u00E0 des d\u00E9cisions op\u00E9rationnelles critiques - construction de fonctions CS, conception de mod\u00E8les op\u00E9rationnels, am\u00E9lioration du NRR et expansion en Am\u00E9rique latine.",
+    "hero.cta":      "Engager une conversation",
+
+    "stats.1": "Ans au niveau Directeur et VP",
+    "stats.2": "Personnes sur les op\u00E9rations pilot\u00E9es",
+    "stats.3": "Langues de travail",
+    "stats.4": "Bas\u00E9 \u00E0 Mexico",
+
+    "what.label":    "Ce que c\u2019est",
+    "what.headline": "Construit et scalable.\u00A0Pas seulement conseill\u00E9.",
+    "what.p1":       "Une d\u00E9cennie d\u2019exp\u00E9rience en tant qu\u2019op\u00E9rateur senior - au niveau Directeur et VP - au sein d\u2019entreprises SaaS B2B, fintech propuls\u00E9 par l\u2019IA et soci\u00E9t\u00E9s technologiques soutenues par capital-risque, au Mexique, en Am\u00E9rique latine et en Afrique.",
+    "what.p2":       "Chaque mission a exig\u00E9 de construire quelque chose qui n\u2019existait pas encore correctement\u00A0: une fonction customer success, un mod\u00E8le op\u00E9rationnel, un moteur de revenus post-vente, une op\u00E9ration r\u00E9gionale. C\u2019est \u00E7a le travail. Le r\u00E9sultat est toujours le m\u00EAme - une fonction structur\u00E9e et autonome qui fonctionne sans que le fondateur intervienne dans chaque d\u00E9cision.",
+    "what.p3":       "Ce n\u2019est pas du conseil \u00E0 distance. Les cadres sont construits pour le contexte sp\u00E9cifique. Les livrables sont con\u00E7us pour \u00EAtre ex\u00E9cut\u00E9s par l\u2019\u00E9quipe interne. Le parti pris est toujours en faveur des r\u00E9sultats, pas de l\u2019\u00E9l\u00E9gance des processus.",
+    "what.footer":   "Bas\u00E9 \u00E0 Mexico \u00B7 Espagnol, anglais et fran\u00E7ais",
+
+    "problems.label":    "Situations que ce travail adresse",
+    "problems.headline": "Les probl\u00E8mes qui d\u00E9clenchent ces missions.",
+
+    "p1.title": "Le customer success n\u2019existe que de nom.",
+    "p1.body":  "L\u2019\u00E9quipe est r\u00E9active. Pas d\u2019onboarding structur\u00E9, pas de health scoring, pas de processus de renouvellement. Le churn est \u00E9lev\u00E9 et les causes profondes ne sont pas identifi\u00E9es.",
+    "p2.title": "Le fondateur est le goulot d\u2019\u00E9tranglement op\u00E9rationnel.",
+    "p2.body":  "La croissance a cass\u00E9 les processus. Chaque d\u00E9cision importante remonte au leadership. Les \u00E9quipes sont cloisonn\u00E9es et les transferts \u00E9chouent r\u00E9guli\u00E8rement.",
+    "p3.title": "Le NRR est en dessous de 110\u202F% et les investisseurs interrogent.",
+    "p3.body":  "L\u2019entreprise perd plus par churn qu\u2019elle ne gagne par expansion. Pas de processus de renouvellement structur\u00E9. L\u2019\u00E9quipe CS n\u2019a pas de mandat commercial.",
+    "p4.title": "Une entr\u00E9e en LATAM sans l\u2019infrastructure op\u00E9rationnelle ad\u00E9quate.",
+    "p4.body":  "Les hypoth\u00E8ses du si\u00E8ge sur l\u2019Am\u00E9rique latine sont erron\u00E9es. Le mod\u00E8le op\u00E9rationnel qui fonctionnait en Europe ou aux \u00C9tats-Unis ne se transpose pas.",
+    "p5.title": "Un nouveau dirigeant a besoin d\u2019un regard ext\u00E9rieur avant de restructurer.",
+    "p5.body":  "Avant de s\u2019engager dans des changements structurels, un nouveau responsable CS ou Ops souhaite un diagnostic ext\u00E9rieur honn\u00EAte - ce qui fonctionne, ce qui ne fonctionne pas, par o\u00F9 commencer.",
+    "p6.title": "L\u2019\u00E9quipe fondatrice a besoin d\u2019un op\u00E9rateur senior dans la pi\u00E8ce.",
+    "p6.body":  "Le conseil est utile strat\u00E9giquement, pas op\u00E9rationnellement. Un conseiller de confiance avec une vraie profondeur d\u2019op\u00E9rateur changerait la fa\u00E7on dont les d\u00E9cisions sont prises.",
+
+    "services.label":    "Services",
+    "services.headline": "Quatre domaines. Une discipline constante.",
+    "s1.title": "Conception et transformation de la fonction customer success",
+    "s1.body":  "Construction ou reconstruction de fonctions post-vente qui retiennent les clients, r\u00E9duisent le churn et g\u00E9n\u00E8rent des revenus d\u2019expansion. Du diagnostic de maturit\u00E9 CS jusqu\u2019\u00E0 la conception compl\u00E8te de l\u2019architecture - onboarding, health scoring, renouvellements et playbooks d\u2019expansion. Disponible comme diagnostic de 3\u20134 semaines, sprint d\u2019architecture de 6\u20138 semaines, ou programme de transformation plus long.",
+    "s1.tag":   "Diagnostic \u00B7 Sprint \u00B7 Programme",
+    "s1.fee":   "\u00C0 partir de 8\u202F000\u00A0$\u00A0USD",
+    "s2.title": "Conception et scaling du mod\u00E8le op\u00E9rationnel",
+    "s2.body":  "Conception de mod\u00E8les op\u00E9rationnels qui \u00E9voluent avec l\u2019entreprise - cadres de responsabilit\u00E9 clairs, syst\u00E8mes de KPI, OKR et processus transverses qui fonctionnent sans que le fondateur soit le n\u0153ud central. Inclut le diagnostic du mod\u00E8le op\u00E9rationnel, la matrice RACI, le cadre OKR, le tableau de bord KPI et les cartographies de processus critiques.",
+    "s2.tag":   "Sprint \u00B7 6\u20138 semaines",
+    "s3.title": "Am\u00E9lioration du Net Revenue Retention",
+    "s3.body":  "Construction de l\u2019infrastructure commerciale du customer success - analyse des causes du churn, segmentation des comptes, playbooks de r\u00E9tention et d\u2019expansion, conception du processus de renouvellement et activation commerciale de l\u2019\u00E9quipe CS. Pour les entreprises o\u00F9 le NRR est en dessous de 110\u202F% et o\u00F9 la pression des investisseurs exige une r\u00E9ponse structurelle.",
+    "s3.tag":   "Programme \u00B7 8\u201312 semaines",
+    "s4.title": "Conseil op\u00E9rationnel Am\u00E9rique latine",
+    "s4.body":  "Accompagnement des entreprises internationales - principalement des SaaS europ\u00E9ens et am\u00E9ricains - dans le d\u00E9veloppement de leurs op\u00E9rations au Mexique et en Am\u00E9rique latine. Adaptation du mod\u00E8le op\u00E9rationnel, priorisation des march\u00E9s, structuration des \u00E9quipes et perspective r\u00E9gionale de terrain. \u00C9galement disponible sous forme de retainer mensuel.",
+    "s4.tag":   "Conseil \u00B7 Retainer",
+    "s4.fee":   "\u00C0 partir de 2\u202F500\u00A0$/mois",
+
+    "cases.label":    "Situations s\u00E9lectionn\u00E9es",
+    "cases.headline": "Ce que cela donne en pratique.",
+    "cases.note":     "Toutes les situations sont g\u00E9n\u00E9ralis\u00E9es. Aucun nom de client ni d\u00E9tail confidentiel n\u2019est divulgu\u00E9.",
+    "c1.ctx":  "S\u00E9rie A \u00B7 SaaS B2B \u00B7 Mexique \u00B7 ARR ~3\u202FM$",
+    "c1.prob": "Fondateur g\u00E9rant le CS en parall\u00E8le. Pas de processus d\u2019onboarding. Deux clients enterprise perdus en six mois. Premier recrutement CS imminent, mais aucun cadre en place.",
+    "c1.tag":  "Sprint d\u2019architecture CS",
+    "c2.ctx":  "SaaS B2B europ\u00E9en \u00B7 Entr\u00E9e au Mexique",
+    "c2.prob": "Le si\u00E8ge souhaite s\u2019implanter au Mexique. Pas d\u2019infrastructure op\u00E9rationnelle. Un Country Manager est recrut\u00E9, mais aucun mod\u00E8le op\u00E9rationnel n\u2019est adapt\u00E9 \u00E0 la r\u00E9gion.",
+    "c2.tag":  "\u00C9valuation op\u00E9rationnelle LATAM",
+    "c3.ctx":  "Fintech S\u00E9rie B \u00B7 120 employ\u00E9s \u00B7 CDMX",
+    "c3.prob": "Doublement des effectifs en 14 mois. Le CEO est un goulot d\u2019\u00E9tranglement dans chaque d\u00E9cision transverse. NRR en baisse. Un nouveau COO arrive dans 60 jours.",
+    "c3.tag":  "Sprint mod\u00E8le op\u00E9rationnel",
+    "c4.ctx":  "SaaS \u00C9tats-Unis \u00B7 Nouveau VP CS \u00B7 Pas de structure h\u00E9rit\u00E9e",
+    "c4.prob": "Le nouveau VP CS ne dispose d\u2019aucune donn\u00E9e, d\u2019aucun processus \u00E9tabli, d\u2019aucune m\u00E9trique de r\u00E9f\u00E9rence. Il a besoin d\u2019un regard ext\u00E9rieur avant de s\u2019engager dans des changements structurels.",
+    "c4.tag":  "Audit de pr\u00E9paration CS",
+
+    "how.label":    "Mod\u00E8le d\u2019engagement",
+    "how.headline": "Structur\u00E9. Cadr\u00E9. Engag\u00E9.",
+    "h1.title": "Une conversation directe",
+    "h1.body":  "Chaque mission commence par un \u00E9change direct pour comprendre la situation sp\u00E9cifique et \u00E9valuer l\u2019ad\u00E9quation. Aucune recommandation requise. Si vous avez un d\u00E9fi op\u00E9rationnel concret qui correspond au travail d\u00E9crit ici, contactez directement.",
+    "h2.title": "Une proposition cadr\u00E9e",
+    "h2.body":  "En cas d\u2019ad\u00E9quation, une proposition \u00E9crite d\u00E9finit l\u2019objectif, le p\u00E9rim\u00E8tre, les livrables, le calendrier et les honoraires. Rien ne commence sans que le p\u00E9rim\u00E8tre soit convenu par \u00E9crit. Un contrat de prestations sign\u00E9 est requis.",
+    "h3.title": "Une livraison structur\u00E9e",
+    "h3.body":  "Le travail avance conform\u00E9ment au p\u00E9rim\u00E8tre convenu, avec des jalons d\u00E9finis et des points r\u00E9guliers. Les livrables sont revus ensemble - pas envoy\u00E9s sans contexte.",
+    "h4.title": "Passation",
+    "h4.body":  "Chaque projet se cl\u00F4t par une passation formelle. Le travail est con\u00E7u pour que l\u2019\u00E9quipe interne puisse ex\u00E9cuter de fa\u00E7on autonome. Aucune d\u00E9pendance continue n\u2019est n\u00E9cessaire.",
+    "h5.title": "Conseil continu optionnel",
+    "h5.body":  "Au terme d\u2019une mission, certains clients passent \u00E0 un retainer mensuel. Cela est propos\u00E9 de fa\u00E7on s\u00E9lective, selon l\u2019ad\u00E9quation et la capacit\u00E9 disponible. Seulement 2\u20133 missions sont actives \u00E0 tout moment.",
+
+    "contact.label":   "Contact",
+    "contact.headline":"Engager une conversation.",
+    "contact.body":    "Si l\u2019une des situations d\u00E9crites sur ce site correspond \u00E0 ce que vous traversez, un message direct est la bonne premi\u00E8re \u00E9tape. Pas de processus d\u2019entr\u00E9e, pas d\u2019honoraires de consultation, pas d\u2019engagement.",
+    "contact.body2":   "Un bref \u00E9change suffit g\u00E9n\u00E9ralement \u00E0 d\u00E9terminer s\u2019il existe une ad\u00E9quation solide. Si c\u2019est le cas, une proposition cadr\u00E9e suit. La capacit\u00E9 est limit\u00E9e \u00E0 2\u20133 missions actives simultan\u00E9ment.",
+    "contact.cta":     "Envoyer un message",
+    "contact.linkedin":"Se connecter sur LinkedIn \u2197",
+
+    "footer.desc": "Conseil ind\u00E9pendant \u00B7 SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rique latine",
+    "footer.copy": "\u00A9 2026 Meridio Advisory. Cabinet de conseil ind\u00E9pendant. Mexico.",
+  }
+};
+
+// ── i18n engine ─────────────────────────────────────────────
+let currentLang = 'en';
+
+function applyTranslations(lang) {
+  currentLang = lang;
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) {
+      el.innerHTML = t[key];
+    }
+  });
+  // Update html lang attribute
+  document.documentElement.lang = lang;
+  // Update active state on all lang toggles
+  document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('active', lang === 'en'));
+  document.querySelectorAll('.lang-es').forEach(el => el.classList.toggle('active', lang === 'es'));
+  document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('active', lang === 'fr'));
+  // Update page title and meta
+  if (lang === 'es') {
+    document.title = 'Meridio Advisory - Consultoría de Customer Success y Operaciones · SaaS B2B y LATAM';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.content = 'Consultoría independiente para empresas B2B SaaS y fintech que construyen funciones de CS, escalan sus operaciones y entran a América Latina. Ciudad de México.';
+  } else if (lang === 'fr') {
+    document.title = 'Meridio Advisory - Conseil Customer Success & Opérations · SaaS B2B & LATAM';
+    const metaDesc2 = document.querySelector('meta[name="description"]');
+    if (metaDesc2) metaDesc2.content = 'Conseil indépendant pour les entreprises SaaS B2B et fintech qui construisent leurs fonctions CS, scalent leurs opérations et entrent en Amérique latine. Mexico.';
+  } else {
+    document.title = 'Meridio Advisory - Customer Success & Operations Advisory · B2B SaaS & LATAM';
+    const metaDesc3 = document.querySelector('meta[name="description"]');
+    if (metaDesc3) metaDesc3.content = 'Independent advisory for B2B SaaS and fintech companies building customer success functions, scaling operations, and entering Latin America. Mexico City.';
+  }
+}
+
+// toggleLang replaced by direct per-language click handlers below
+
+// Detect browser lang on load
+(function() {
+  const lang = (navigator.language || '').toLowerCase();
+  const detected = lang.startsWith('es') ? 'es' : lang.startsWith('fr') ? 'fr' : 'en';
+  applyTranslations(detected);
+})();
+
+
+// ── main.js ──────────────────────────────
+// ═══════════════════════════════════════════════════════════
+// MERIDIO - Main JS
+// ═══════════════════════════════════════════════════════════
+
+function __initMeridio() {
+
+  // ── THEME TOGGLE ──────────────────────────────────────────
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('themeToggle');
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  let currentTheme = getSystemTheme();
+  html.setAttribute('data-theme', currentTheme);
+
+  function setTheme(theme) {
+    currentTheme = theme;
+    html.setAttribute('data-theme', theme);
+    if (themeBtn) {
+      if (theme === 'dark') {
+        themeBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+        themeBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        themeBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        themeBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  // ── LANGUAGE TOGGLES ──────────────────────────────────────
+  // Direct language selection: clicking EN/ES/FR sets that language immediately
+  document.querySelectorAll('#langToggle, #footerLangToggle').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const t = e.target;
+      if (t.classList.contains('lang-en')) applyTranslations('en');
+      else if (t.classList.contains('lang-es')) applyTranslations('es');
+      else if (t.classList.contains('lang-fr')) applyTranslations('fr');
+    });
+  });
+
+  // ── STICKY NAV ────────────────────────────────────────────
+  const nav = document.getElementById('nav');
+  const SCROLL_THRESHOLD = 60;
+
+  function handleScroll() {
+    if (window.scrollY > SCROLL_THRESHOLD) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  // ── HAMBURGER / MOBILE NAV ────────────────────────────────
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  let menuOpen = false;
+
+  function openMenu() {
+    menuOpen = true;
+    mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden', 'false');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    // Animate hamburger
+    const spans = hamburger.querySelectorAll('span');
+    if (spans[0]) spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    if (spans[1]) spans[1].style.opacity = '0';
+    if (spans[2]) spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+  }
+
+  function closeMenu() {
+    menuOpen = false;
+    mobileNav.classList.remove('open');
+    mobileNav.setAttribute('aria-hidden', 'true');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    const spans = hamburger.querySelectorAll('span');
+    if (spans[0]) spans[0].style.transform = '';
+    if (spans[1]) spans[1].style.opacity = '';
+    if (spans[2]) spans[2].style.transform = '';
+  }
+
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => menuOpen ? closeMenu() : openMenu());
+    mobileNav.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  }
+
+  // ── SMOOTH SCROLL FOR ANCHOR LINKS ───────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ── SUBTLE SCROLL REVEAL ──────────────────────────────────
+  if ('IntersectionObserver' in window) {
+    const revealEls = document.querySelectorAll('.problem-card, .service-item, .case-card, .step, .stat');
+    revealEls.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(12px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+  }
+
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initMeridio);
+} else {
+  __initMeridio();
+}
+
+</script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script><script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script><script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.paren
