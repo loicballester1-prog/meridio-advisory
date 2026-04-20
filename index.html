@@ -1434,10 +1434,9 @@ function applyTranslations(lang) {
 
 // toggleLang replaced by direct per-language click handlers below
 
-// Detect browser lang on load
+// Initial language on load (forced to English; manual EN/ES/FR selector still works)
 (function() {
-  const lang = (navigator.language || '').toLowerCase();
-  const detected = lang.startsWith('es') ? 'es' : lang.startsWith('fr') ? 'fr' : 'en';
+  const detected = 'en';
   applyTranslations(detected);
 })();
 
@@ -1457,7 +1456,7 @@ function __initMeridio() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
-  let currentTheme = getSystemTheme();
+  let currentTheme = 'light'; // forced on load; manual dark/light toggle still works
   html.setAttribute('data-theme', currentTheme);
 
   function setTheme(theme) {
