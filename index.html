@@ -736,6 +736,114 @@ section h2 {
   }
 }
 
+/* ── CONTACT FORM ─────────────────────────────────────────── */
+.contact-form {
+  margin-top: var(--space-10);
+  max-width: 640px;
+}
+.form-row + .form-row { margin-top: var(--space-5); }
+.form-label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: var(--space-2);
+}
+.form-input,
+.form-select,
+.form-textarea {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: #FFFFFF;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  line-height: 1.5;
+  transition: border-color var(--t), background var(--t);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.form-input::placeholder,
+.form-textarea::placeholder { color: rgba(255,255,255,0.5); }
+.form-input:hover,
+.form-select:hover,
+.form-textarea:hover { border-color: rgba(255,255,255,0.5); }
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.1);
+}
+.form-textarea { resize: vertical; min-height: 140px; }
+.form-select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='none' stroke='%23ffffff' stroke-opacity='0.7' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1 1.5l5 5 5-5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 38px;
+}
+.form-select option { background: #1F3A5F; color: #FFFFFF; }
+
+/* Dark-mode refinement — .contact's navy becomes lighter (#4F7EC0); use
+   darker fills and stronger white borders to keep the form readable. */
+[data-theme="dark"] .form-label { color: rgba(255,255,255,0.92); }
+[data-theme="dark"] .form-input,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-textarea {
+  color: #FFFFFF;
+  background: rgba(0,0,0,0.2);
+  border-color: rgba(255,255,255,0.5);
+}
+[data-theme="dark"] .form-input::placeholder,
+[data-theme="dark"] .form-textarea::placeholder { color: rgba(255,255,255,0.6); }
+[data-theme="dark"] .form-input:hover,
+[data-theme="dark"] .form-select:hover,
+[data-theme="dark"] .form-textarea:hover { border-color: rgba(255,255,255,0.7); }
+[data-theme="dark"] .form-input:focus,
+[data-theme="dark"] .form-select:focus,
+[data-theme="dark"] .form-textarea:focus {
+  border-color: #FFFFFF;
+  background: rgba(0,0,0,0.28);
+}
+.contact-form .contact-ctas { margin-top: var(--space-8); }
+
+/* Subtle email line, placed just below the form */
+.contact-direct {
+  margin-top: var(--space-8);
+  font-size: var(--text-sm);
+  color: rgba(255,255,255,0.55);
+}
+.contact-direct-link {
+  color: rgba(255,255,255,0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  padding-bottom: 1px;
+  transition: color var(--t), border-color var(--t);
+}
+.contact-direct-link:hover { color: var(--white); border-color: var(--white); }
+
+/* Footer email */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.footer-email {
+  font-size: var(--text-xs);
+  color: #555;
+  transition: color var(--t);
+}
+.footer-email:hover { color: rgba(255,255,255,0.8); }
+
   </style>
 </head>
 <body>
@@ -1062,10 +1170,41 @@ section h2 {
     <h2 class="contact-headline" data-i18n="contact.headline">Start a conversation.</h2>
     <p class="contact-body" data-i18n="contact.body">If the situation described anywhere on this site matches something you are working through, a direct message is the right first step. No intake process, no consultation fee, no obligation.</p>
     <p class="contact-body" data-i18n="contact.body2">A short exchange is usually enough to determine whether there is a strong fit. If there is, a scoped proposal follows. Capacity is limited to 2–3 active engagements at a time.</p>
-    <div class="contact-ctas">
-      <a href="/cdn-cgi/l/email-protection#771f121b1b18371a12051e131e18591418" class="btn-primary btn-contact" data-i18n="contact.cta">Send a message</a>
-      <a href="https://www.linkedin.com/company/meridio-advisory" target="_blank" rel="noopener" class="btn-linkedin" data-i18n="contact.linkedin">Connect on LinkedIn ↗</a>
-    </div>
+    <form class="contact-form" action="https://formspree.io/f/meevlrgg" method="POST">
+      <div class="form-row">
+        <label class="form-label" for="cf-name" data-i18n="form.name">First &amp; last name</label>
+        <input class="form-input" type="text" id="cf-name" name="full_name" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="cf-email" data-i18n="form.email">Work email</label>
+        <input class="form-input" type="email" id="cf-email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="cf-company" data-i18n="form.company">Company</label>
+        <input class="form-input" type="text" id="cf-company" name="company" autocomplete="organization" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="cf-service" data-i18n="form.service">Service</label>
+        <select class="form-select" id="cf-service" name="service">
+          <option value="" data-i18n="form.service.placeholder">Select a service (optional)</option>
+          <option value="Customer Success Function Design & Transformation" data-i18n="form.service.cs">Customer Success Function Design &amp; Transformation</option>
+          <option value="Operations Design & Scaling" data-i18n="form.service.ops">Operations Design &amp; Scaling</option>
+          <option value="Net Revenue Retention Improvement" data-i18n="form.service.nrr">Net Revenue Retention Improvement</option>
+          <option value="Latin America Operations Advisory" data-i18n="form.service.latam">Latin America Operations Advisory</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="cf-message" data-i18n="form.message">Message</label>
+        <textarea class="form-input form-textarea" id="cf-message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="contact-ctas">
+        <button type="submit" class="btn-primary btn-contact" data-i18n="contact.cta">Send a message</button>
+        <a href="https://www.linkedin.com/company/meridio-advisory" target="_blank" rel="noopener" class="btn-linkedin" data-i18n="contact.linkedin">Connect on LinkedIn ↗</a>
+      </div>
+    </form>
+    <p class="contact-direct">
+      <span data-i18n="contact.direct">Prefer email? Write directly to </span><a class="contact-direct-link" href="mailto:contact@meridioadvisory.com">contact@meridioadvisory.com</a>
+    </p>
   </div>
 </section>
 
@@ -1097,11 +1236,12 @@ section h2 {
     </div>
     <div class="footer-bottom">
       <span data-i18n="footer.copy">© 2026 Meridio Advisory. Independent advisory practice. Mexico City.</span>
+      <a href="mailto:contact@meridioadvisory.com" class="footer-email">contact@meridioadvisory.com</a>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // ═══════════════════════════════════════════════════════════
 // MERIDIO - Bilingual i18n (English / Spanish)
 // ═══════════════════════════════════════════════════════════
@@ -1199,6 +1339,18 @@ const translations = {
     "contact.body2":   "A short exchange is usually enough to determine whether there is a strong fit. If there is, a scoped proposal follows. Capacity is limited to 2\u20133 active engagements at a time.",
     "contact.cta":     "Send a message",
     "contact.linkedin":"Connect on LinkedIn \u2197",
+    "contact.direct":  "Prefer email? Write directly to ",
+
+    "form.name":                "First &amp; last name",
+    "form.email":               "Work email",
+    "form.company":             "Company",
+    "form.service":             "Service",
+    "form.service.placeholder": "Select a service (optional)",
+    "form.service.cs":          "Customer Success Function Design &amp; Transformation",
+    "form.service.ops":         "Operations Design &amp; Scaling",
+    "form.service.nrr":         "Net Revenue Retention Improvement",
+    "form.service.latam":       "Latin America Operations Advisory",
+    "form.message":             "Message",
 
     "footer.desc": "Independent advisory \u00B7 B2B SaaS \u00B7 Fintech \u00B7 Latin America",
     "footer.copy": "\u00A9 2026 Meridio Advisory. Independent advisory practice. Mexico City.",
@@ -1296,6 +1448,18 @@ const translations = {
     "contact.body2":   "Un breve intercambio suele ser suficiente para determinar si existe un encaje s\u00F3lido. Si lo hay, se presenta una propuesta con alcance definido. La capacidad est\u00E1 limitada a 2\u20133 compromisos activos simult\u00E1neamente.",
     "contact.cta":     "Enviar un mensaje",
     "contact.linkedin":"Conectar en LinkedIn \u2197",
+    "contact.direct":  "\u00BFPrefieres email? Escr\u00EDbenos directamente a ",
+
+    "form.name":                "Nombre y apellido",
+    "form.email":               "Correo profesional",
+    "form.company":             "Empresa",
+    "form.service":             "Servicio",
+    "form.service.placeholder": "Selecciona un servicio (opcional)",
+    "form.service.cs":          "Dise\u00F1o y Transformaci\u00F3n de la Funci\u00F3n de Customer Success",
+    "form.service.ops":         "Dise\u00F1o y Escalamiento del Modelo Operativo",
+    "form.service.nrr":         "Programa de Mejora del NRR",
+    "form.service.latam":       "Asesor\u00EDa Operativa para Am\u00E9rica Latina",
+    "form.message":             "Mensaje",
 
     "footer.desc": "Consultor\u00EDa independiente \u00B7 SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rica Latina",
     "footer.copy": "\u00A9 2026 Meridio Advisory. Pr\u00E1ctica consultora independiente. Ciudad de M\u00E9xico.",
@@ -1392,6 +1556,18 @@ const translations = {
     "contact.body2":   "Un bref \u00E9change suffit g\u00E9n\u00E9ralement \u00E0 d\u00E9terminer s\u2019il existe une ad\u00E9quation solide. Si c\u2019est le cas, une proposition cadr\u00E9e suit. La capacit\u00E9 est limit\u00E9e \u00E0 2\u20133 missions actives simultan\u00E9ment.",
     "contact.cta":     "Envoyer un message",
     "contact.linkedin":"Se connecter sur LinkedIn \u2197",
+    "contact.direct":  "Vous pr\u00E9f\u00E9rez l\u2019email ? \u00C9crivez directement \u00E0 ",
+
+    "form.name":                "Nom et pr\u00E9nom",
+    "form.email":               "Email professionnel",
+    "form.company":             "Entreprise",
+    "form.service":             "Service",
+    "form.service.placeholder": "Choisir un service (optionnel)",
+    "form.service.cs":          "Conception et transformation de la fonction customer success",
+    "form.service.ops":         "Conception et scaling du mod\u00E8le op\u00E9rationnel",
+    "form.service.nrr":         "Am\u00E9lioration du Net Revenue Retention",
+    "form.service.latam":       "Conseil op\u00E9rationnel Am\u00E9rique latine",
+    "form.message":             "Message",
 
     "footer.desc": "Conseil ind\u00E9pendant \u00B7 SaaS B2B \u00B7 Fintech \u00B7 Am\u00E9rique latine",
     "footer.copy": "\u00A9 2026 Meridio Advisory. Cabinet de conseil ind\u00E9pendant. Mexico.",
